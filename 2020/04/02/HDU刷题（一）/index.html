@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>HDU刷题（一） | JHSclub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一阶段：53题。 1000、1089—1096、1001、2000—2011、2039、1720、1062、2104、1064、2734、1170、1197、2629、2012—2030、2032、2040、2042、2054、2055">
+  <meta name="description" content="相关网址：HDUOJ 第一阶段：53题。 1000、1089—1096、1001、2000—2011、2039、1720、1062、2104、1064、2734、1170、1197、2629、2012—2030、2032、2040、2042、2054、2055">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HDU刷题（一）">
 <meta property="og:url" content="http://yoursite.com/2020/04/02/HDU%E5%88%B7%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="JHSclub">
-<meta property="og:description" content="第一阶段：53题。 1000、1089—1096、1001、2000—2011、2039、1720、1062、2104、1064、2734、1170、1197、2629、2012—2030、2032、2040、2042、2054、2055">
+<meta property="og:description" content="相关网址：HDUOJ 第一阶段：53题。 1000、1089—1096、1001、2000—2011、2039、1720、1062、2104、1064、2734、1170、1197、2629、2012—2030、2032、2040、2042、2054、2055">
 <meta property="article:published_time" content="2020-04-02T01:57:41.000Z">
-<meta property="article:modified_time" content="2020-04-04T03:15:14.318Z">
+<meta property="article:modified_time" content="2020-04-07T14:06:44.299Z">
 <meta property="article:author" content="姜浩淞">
 <meta property="article:tag" content="刷题">
 <meta property="article:tag" content="HDU">
@@ -190,7 +190,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一阶段：53题。</p>
+        <p>相关网址：<a href="http://acm.hdu.edu.cn/" target="_blank" rel="noopener">HDUOJ</a></p>
+<p>第一阶段：53题。</p>
 <p>1000、1089—1096、1001、2000—2011、2039、1720、1062、2104、1064、2734、1170、1197、2629、2012—2030、2032、2040、2042、2054、2055</p>
 <a id="more"></a>
 
@@ -222,6 +223,17 @@
 <h4 id="1001"><a href="#1001" class="headerlink" title="1001:"></a>1001:</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i, j, k ;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;i) != EOF&amp;&amp;i)</span><br><span class="line">    &#123;</span><br><span class="line">        k=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt;= i; j++)</span><br><span class="line">            k = k + j;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n\n"</span>, k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​                                                                                                                当前Rank：104584</p>
+<h2 id="二，简单操作（12题）"><a href="#二，简单操作（12题）" class="headerlink" title="二，简单操作（12题）"></a>二，简单操作（12题）</h2><p>2000：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> a, b, c, t;</span><br><span class="line">    <span class="keyword">while</span>( <span class="built_in">scanf</span>(<span class="string">"%c%c%c%*c"</span>,&amp;a,&amp;b,&amp;c)!=EOF )</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">if</span>( a&gt;b ) &#123; t=a; a=b; b=t; &#125;<span class="comment">//如果a的ASCII码大于b，就交换a，b</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( a&gt;c ) &#123; t=a; a=c; c=t; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( b&gt;c ) &#123; t=b; b=c; c=t; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%c %c %c\n"</span>,a,b,c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2001：</p>
+<p>幂函数：pow() 函数用来求 x 的 y 次幂（次方），x、y及函数值都是double型 ，其原型为：<br>  double pow(double x, double y)，Math.pow(底数,几次方)。举例：pow（4，2）=16</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> a, b, c, d, i;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf%lf"</span>, &amp;a, &amp;b, &amp;c, &amp;d) != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        i = (c - a) * (c - a) + (d - b) * (d - b);</span><br><span class="line">        i = <span class="built_in">pow</span>(i, <span class="number">0.5</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2002：</p>
+<p>定义宏：#define M (a+b) 即M=a+b；</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PI 3.1415927</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">double</span> k, m, n;</span><br><span class="line">   <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lf"</span>, &amp;k) == <span class="number">1</span>)</span><br><span class="line">   &#123;</span><br><span class="line">      m = (k * k * k) * PI * <span class="number">4</span> / <span class="number">3</span>;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">"%.3lf\n"</span>, m);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -359,7 +371,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-输入输出练习（10题）"><span class="toc-number">1.</span> <span class="toc-text">一. 输入输出练习（10题）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1000"><span class="toc-number">1.0.1.</span> <span class="toc-text">1000:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1089"><span class="toc-number">1.0.2.</span> <span class="toc-text">1089:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1090："><span class="toc-number">1.0.3.</span> <span class="toc-text">1090：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1091："><span class="toc-number">1.0.4.</span> <span class="toc-text">1091：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1092："><span class="toc-number">1.0.5.</span> <span class="toc-text">1092：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1093："><span class="toc-number">1.0.6.</span> <span class="toc-text">1093：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1094："><span class="toc-number">1.0.7.</span> <span class="toc-text">1094：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1095"><span class="toc-number">1.0.8.</span> <span class="toc-text">1095:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1096"><span class="toc-number">1.0.9.</span> <span class="toc-text">1096:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1001"><span class="toc-number">1.0.10.</span> <span class="toc-text">1001:</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-输入输出练习（10题）"><span class="toc-number">1.</span> <span class="toc-text">一. 输入输出练习（10题）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1000"><span class="toc-number">1.0.1.</span> <span class="toc-text">1000:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1089"><span class="toc-number">1.0.2.</span> <span class="toc-text">1089:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1090："><span class="toc-number">1.0.3.</span> <span class="toc-text">1090：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1091："><span class="toc-number">1.0.4.</span> <span class="toc-text">1091：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1092："><span class="toc-number">1.0.5.</span> <span class="toc-text">1092：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1093："><span class="toc-number">1.0.6.</span> <span class="toc-text">1093：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1094："><span class="toc-number">1.0.7.</span> <span class="toc-text">1094：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1095"><span class="toc-number">1.0.8.</span> <span class="toc-text">1095:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1096"><span class="toc-number">1.0.9.</span> <span class="toc-text">1096:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1001"><span class="toc-number">1.0.10.</span> <span class="toc-text">1001:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二，简单操作（12题）"><span class="toc-number">2.</span> <span class="toc-text">二，简单操作（12题）</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -482,6 +494,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">刷题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">HDU</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
@@ -491,14 +511,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考研</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">刷题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HDU</a>
               </li>
             
             <div class="clearfix"></div>
